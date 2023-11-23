@@ -1,0 +1,254 @@
+{
+    "id": "01aefa93-6044-4159-8358-7e91310aa05f",
+    "sceneType": "SCENE",
+    "settings": {
+        "preloadPackFiles": [],
+        "createMethodName": "editorCreate",
+        "sceneKey": "Level",
+        "borderWidth": 1080,
+        "borderHeight": 1920
+    },
+    "displayList": [
+        {
+            "type": "Container",
+            "id": "afa838a3-120f-4085-9bbd-b3b0718f1002",
+            "label": "body",
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "0bb6d0eb-174b-4080-a02d-564dbbd15d40",
+                    "label": "background",
+                    "texture": {
+                        "key": "background"
+                    },
+                    "x": 540,
+                    "y": 960
+                },
+                {
+                    "type": "Container",
+                    "id": "f752975f-5242-4151-8498-c77925cde560",
+                    "label": "container_backSideCards",
+                    "scope": "CLASS",
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "79dac616-0404-4424-9a12-aab63c279a30",
+                            "label": "backSide",
+                            "texture": {
+                                "key": "backSide"
+                            },
+                            "x": 210,
+                            "y": 630,
+                            "scaleX": 1.2,
+                            "scaleY": 1.2
+                        },
+                        {
+                            "type": "Image",
+                            "id": "b925e2ee-06f6-40d7-8a8e-b50ba8158fa0",
+                            "label": "backSide_1",
+                            "texture": {
+                                "key": "backSide"
+                            },
+                            "x": 540,
+                            "y": 630,
+                            "scaleX": 1.2,
+                            "scaleY": 1.2
+                        },
+                        {
+                            "type": "Image",
+                            "id": "ecb3cc5a-ddda-49fd-8367-9cc9cc6be244",
+                            "label": "backSide_2",
+                            "texture": {
+                                "key": "backSide"
+                            },
+                            "x": 870,
+                            "y": 630,
+                            "scaleX": 1.2,
+                            "scaleY": 1.2
+                        },
+                        {
+                            "type": "Image",
+                            "id": "ae9d270e-efb1-4e5d-98f6-faae0e7a42d7",
+                            "label": "backSide_3",
+                            "texture": {
+                                "key": "backSide"
+                            },
+                            "x": 210,
+                            "y": 960,
+                            "scaleX": 1.2,
+                            "scaleY": 1.2
+                        },
+                        {
+                            "type": "Image",
+                            "id": "917a4252-251a-4285-bb0f-d685c61b3759",
+                            "label": "backSide_4",
+                            "texture": {
+                                "key": "backSide"
+                            },
+                            "x": 540,
+                            "y": 960,
+                            "scaleX": 1.2,
+                            "scaleY": 1.2
+                        },
+                        {
+                            "type": "Image",
+                            "id": "440fb4cb-5469-4376-8def-32d1430f1459",
+                            "label": "backSide_5",
+                            "texture": {
+                                "key": "backSide"
+                            },
+                            "x": 870,
+                            "y": 960,
+                            "scaleX": 1.2,
+                            "scaleY": 1.2
+                        },
+                        {
+                            "type": "Image",
+                            "id": "2422ba2a-686d-4af0-a2da-e68f45969219",
+                            "label": "backSide_6",
+                            "texture": {
+                                "key": "backSide"
+                            },
+                            "x": 210,
+                            "y": 1290,
+                            "scaleX": 1.2,
+                            "scaleY": 1.2
+                        },
+                        {
+                            "type": "Image",
+                            "id": "75dadc35-7df6-401b-a3c9-cc1ba3caf73e",
+                            "label": "backSide_7",
+                            "texture": {
+                                "key": "backSide"
+                            },
+                            "x": 540,
+                            "y": 1290,
+                            "scaleX": 1.2,
+                            "scaleY": 1.2
+                        },
+                        {
+                            "type": "Image",
+                            "id": "c8dfa1a7-9e8c-46b8-bb21-02488666f6ca",
+                            "label": "backSide_8",
+                            "texture": {
+                                "key": "backSide"
+                            },
+                            "x": 870,
+                            "y": 1290,
+                            "scaleX": 1.2,
+                            "scaleY": 1.2
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "375174d9-871b-4c00-93c0-87b38654c839",
+                    "label": "container_frontSideCards",
+                    "scope": "CLASS"
+                },
+                {
+                    "type": "Container",
+                    "id": "abfdc88b-659c-46ca-a67c-616bf803cf68",
+                    "label": "container_correctCards",
+                    "scope": "CLASS"
+                },
+                {
+                    "type": "Container",
+                    "id": "94e5b1c7-1f0f-4ca0-b9d7-770889320f3b",
+                    "label": "container_border",
+                    "scope": "CLASS"
+                },
+                {
+                    "type": "Image",
+                    "id": "3b707115-d8a8-430c-bb50-d7263c3029a5",
+                    "label": "result_image",
+                    "scope": "CLASS",
+                    "texture": {
+                        "key": "you_win"
+                    },
+                    "x": 1668,
+                    "y": 960
+                },
+                {
+                    "type": "Image",
+                    "id": "604e41e3-584c-49eb-825a-f824eb230f4d",
+                    "label": "registration_button",
+                    "useGameObjectName": true,
+                    "scope": "CLASS",
+                    "texture": {
+                        "key": "registration-button"
+                    },
+                    "x": 1667,
+                    "y": 960
+                },
+                {
+                    "type": "Image",
+                    "id": "ddb1cc91-230c-4aa9-be81-885da9361b6f",
+                    "label": "play_button",
+                    "useGameObjectName": true,
+                    "scope": "CLASS",
+                    "texture": {
+                        "key": "play-button"
+                    },
+                    "x": 540,
+                    "y": 1632
+                },
+                {
+                    "type": "Text",
+                    "id": "9804034e-6692-471f-8850-5760a58037a8",
+                    "label": "instruction_txt",
+                    "scope": "CLASS",
+                    "x": 540,
+                    "y": 1520,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "alpha": 0,
+                    "alphaTopLeft": 0,
+                    "alphaTopRight": 0,
+                    "alphaBottomLeft": 0,
+                    "alphaBottomRight": 0,
+                    "text": "MEMORIZE THE SPOTS ",
+                    "fontFamily": "GainsboroughSans",
+                    "fontSize": "94px",
+                    "shadow.offsetX": 6,
+                    "shadow.offsetY": 5,
+                    "shadow.fill": true,
+                    "shadow.blur": 10
+                },
+                {
+                    "type": "Image",
+                    "id": "d18d3038-dc4d-46f0-89e8-7283fd75e959",
+                    "label": "top_logo",
+                    "texture": {
+                        "key": "logo"
+                    },
+                    "x": 540,
+                    "y": 208,
+                    "scaleX": 1.2,
+                    "scaleY": 1.2
+                },
+                {
+                    "type": "Image",
+                    "id": "ce81badc-f1bc-4286-a7f0-25e713f86197",
+                    "label": "bottom_logo",
+                    "scope": "CLASS",
+                    "texture": {
+                        "key": "logo"
+                    },
+                    "x": 540,
+                    "y": 1712,
+                    "scaleX": 1.2,
+                    "scaleY": 1.2,
+                    "visible": false
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    }
+}

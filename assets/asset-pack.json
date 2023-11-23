@@ -1,0 +1,113 @@
+{
+    "section1": {
+        "files": [
+            {
+                "url": "assets/images/border.png",
+                "type": "image",
+                "key": "border"
+            },
+            {
+                "url": "assets/images/card-1.png",
+                "type": "image",
+                "key": "card-1"
+            },
+            {
+                "url": "assets/images/card-2.png",
+                "type": "image",
+                "key": "card-2"
+            },
+            {
+                "url": "assets/images/card-3.png",
+                "type": "image",
+                "key": "card-3"
+            },
+            {
+                "url": "assets/images/card-4.png",
+                "type": "image",
+                "key": "card-4"
+            },
+            {
+                "url": "assets/images/card-5.png",
+                "type": "image",
+                "key": "card-5"
+            },
+            {
+                "url": "assets/images/card-6.png",
+                "type": "image",
+                "key": "card-6"
+            },
+            {
+                "url": "assets/images/card-7.png",
+                "type": "image",
+                "key": "card-7"
+            },
+            {
+                "url": "assets/images/card-8.png",
+                "type": "image",
+                "key": "card-8"
+            },
+            {
+                "url": "assets/images/card-9.png",
+                "type": "image",
+                "key": "card-9"
+            },
+            {
+                "url": "src/scripts/GameManager.js",
+                "type": "script",
+                "key": "GameManager"
+            },
+            {
+                "url": "src/scenes/Home.js",
+                "type": "sceneFile",
+                "key": "Home"
+            },
+            {
+                "url": "src/scripts/InputManager.js",
+                "type": "script",
+                "key": "InputManager"
+            },
+            {
+                "url": "assets/images/play-button.png",
+                "type": "image",
+                "key": "play-button"
+            },
+            {
+                "url": "assets/images/registration-button.png",
+                "type": "image",
+                "key": "registration-button"
+            },
+            {
+                "url": "src/scripts/SocketManager.js",
+                "type": "script",
+                "key": "SocketManager"
+            },
+            {
+                "url": "src/scripts/SoundManager.js",
+                "type": "script",
+                "key": "SoundManager"
+            },
+            {
+                "url": "src/scripts/TweenManager.js",
+                "type": "script",
+                "key": "TweenManager"
+            },
+            {
+                "url": "assets/images/you_lose.png",
+                "type": "image",
+                "key": "you_lose"
+            },
+            {
+                "url": "assets/images/you_win.png",
+                "type": "image",
+                "key": "you_win"
+            }
+        ]
+    },
+    "meta": {
+        "app": "Phaser Editor 2D - Asset Pack Editor",
+        "contentType": "phasereditor2d.pack.core.AssetContentType",
+        "url": "https://phasereditor2d.com",
+        "version": 2,
+        "showAllFilesInBlocks": false
+    }
+}

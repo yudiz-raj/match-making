@@ -1,0 +1,52 @@
+{
+    "id": "253e1455-1002-4611-95b4-e44b23c389f2",
+    "sceneType": "SCENE",
+    "settings": {
+        "preloadPackFiles": [],
+        "createMethodName": "editorCreate",
+        "sceneKey": "Home",
+        "borderWidth": 1080,
+        "borderHeight": 1920
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "402f0dd9-b7c9-4d47-9c10-527f177e51c7",
+            "label": "background",
+            "texture": {
+                "key": "background"
+            },
+            "x": 540,
+            "y": 960
+        },
+        {
+            "type": "Image",
+            "id": "413bb6fa-ef39-4372-805f-7a763c761e8b",
+            "label": "play_button",
+            "useGameObjectName": true,
+            "scope": "CLASS",
+            "texture": {
+                "key": "play-button"
+            },
+            "x": 540,
+            "y": 1530
+        },
+        {
+            "type": "Image",
+            "id": "8d450624-96d1-4ad9-b8d8-21df64cf4db4",
+            "label": "yudiz_logo",
+            "texture": {
+                "key": "yudiz-logo"
+            },
+            "x": 540,
+            "y": 675
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 4
+    }
+}
