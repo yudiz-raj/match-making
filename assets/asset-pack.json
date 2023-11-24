@@ -2,9 +2,64 @@
     "section1": {
         "files": [
             {
+                "url": "src/prefabs/Card.js",
+                "type": "script",
+                "key": "Card"
+            },
+            {
                 "url": "assets/images/card-1.png",
                 "type": "image",
                 "key": "card-1"
+            },
+            {
+                "url": "assets/images/card-10.png",
+                "type": "image",
+                "key": "card-10"
+            },
+            {
+                "url": "assets/images/card-11.png",
+                "type": "image",
+                "key": "card-11"
+            },
+            {
+                "url": "assets/images/card-12.png",
+                "type": "image",
+                "key": "card-12"
+            },
+            {
+                "url": "assets/images/card-13.png",
+                "type": "image",
+                "key": "card-13"
+            },
+            {
+                "url": "assets/images/card-14.png",
+                "type": "image",
+                "key": "card-14"
+            },
+            {
+                "url": "assets/images/card-15.png",
+                "type": "image",
+                "key": "card-15"
+            },
+            {
+                "url": "assets/images/card-16.png",
+                "type": "image",
+                "key": "card-16"
+            },
+            {
+                "url": "assets/images/card-17.png",
+                "type": "image",
+                "key": "card-17"
+            },
+            {
+                "url": "assets/images/card-18.png",
+                "type": "image",
+                "key": "card-18"
+            },
+            {
+                "url": "assets/images/card-19.png",
+                "type": "image",
+                "key": "card-19"
             },
             {
                 "url": "assets/images/card-2.png",
@@ -12,14 +67,159 @@
                 "key": "card-2"
             },
             {
+                "url": "assets/images/card-20.png",
+                "type": "image",
+                "key": "card-20"
+            },
+            {
+                "url": "assets/images/card-21.png",
+                "type": "image",
+                "key": "card-21"
+            },
+            {
+                "url": "assets/images/card-22.png",
+                "type": "image",
+                "key": "card-22"
+            },
+            {
+                "url": "assets/images/card-23.png",
+                "type": "image",
+                "key": "card-23"
+            },
+            {
+                "url": "assets/images/card-24.png",
+                "type": "image",
+                "key": "card-24"
+            },
+            {
+                "url": "assets/images/card-25.png",
+                "type": "image",
+                "key": "card-25"
+            },
+            {
+                "url": "assets/images/card-26.png",
+                "type": "image",
+                "key": "card-26"
+            },
+            {
+                "url": "assets/images/card-27.png",
+                "type": "image",
+                "key": "card-27"
+            },
+            {
+                "url": "assets/images/card-28.png",
+                "type": "image",
+                "key": "card-28"
+            },
+            {
+                "url": "assets/images/card-29.png",
+                "type": "image",
+                "key": "card-29"
+            },
+            {
                 "url": "assets/images/card-3.png",
                 "type": "image",
                 "key": "card-3"
             },
             {
+                "url": "assets/images/card-30.png",
+                "type": "image",
+                "key": "card-30"
+            },
+            {
+                "url": "assets/images/card-31.png",
+                "type": "image",
+                "key": "card-31"
+            },
+            {
+                "url": "assets/images/card-32.png",
+                "type": "image",
+                "key": "card-32"
+            },
+            {
+                "url": "assets/images/card-33.png",
+                "type": "image",
+                "key": "card-33"
+            },
+            {
+                "url": "assets/images/card-34.png",
+                "type": "image",
+                "key": "card-34"
+            },
+            {
+                "url": "assets/images/card-35.png",
+                "type": "image",
+                "key": "card-35"
+            },
+            {
+                "url": "assets/images/card-36.png",
+                "type": "image",
+                "key": "card-36"
+            },
+            {
+                "url": "assets/images/card-37.png",
+                "type": "image",
+                "key": "card-37"
+            },
+            {
+                "url": "assets/images/card-38.png",
+                "type": "image",
+                "key": "card-38"
+            },
+            {
+                "url": "assets/images/card-39.png",
+                "type": "image",
+                "key": "card-39"
+            },
+            {
                 "url": "assets/images/card-4.png",
                 "type": "image",
                 "key": "card-4"
+            },
+            {
+                "url": "assets/images/card-40.png",
+                "type": "image",
+                "key": "card-40"
+            },
+            {
+                "url": "assets/images/card-41.png",
+                "type": "image",
+                "key": "card-41"
+            },
+            {
+                "url": "assets/images/card-42.png",
+                "type": "image",
+                "key": "card-42"
+            },
+            {
+                "url": "assets/images/card-43.png",
+                "type": "image",
+                "key": "card-43"
+            },
+            {
+                "url": "assets/images/card-44.png",
+                "type": "image",
+                "key": "card-44"
+            },
+            {
+                "url": "assets/images/card-45.png",
+                "type": "image",
+                "key": "card-45"
+            },
+            {
+                "url": "assets/images/card-46.png",
+                "type": "image",
+                "key": "card-46"
+            },
+            {
+                "url": "assets/images/card-47.png",
+                "type": "image",
+                "key": "card-47"
+            },
+            {
+                "url": "assets/images/card-48.png",
+                "type": "image",
+                "key": "card-48"
             },
             {
                 "url": "assets/images/card-5.png",
@@ -45,6 +245,16 @@
                 "url": "assets/images/card-9.png",
                 "type": "image",
                 "key": "card-9"
+            },
+            {
+                "url": "assets/images/card-base.png",
+                "type": "image",
+                "key": "card-base"
+            },
+            {
+                "url": "assets/images/card-timer-base.png",
+                "type": "image",
+                "key": "card-timer-base"
             },
             {
                 "url": "src/scripts/GameManager.js",
@@ -82,6 +292,11 @@
                 "key": "registration-button"
             },
             {
+                "url": "src/prefabs/SelectionCardTimer.js",
+                "type": "script",
+                "key": "SelectionCardTimer"
+            },
+            {
                 "url": "src/scripts/SocketManager.js",
                 "type": "script",
                 "key": "SocketManager"
@@ -90,6 +305,16 @@
                 "url": "src/scripts/SoundManager.js",
                 "type": "script",
                 "key": "SoundManager"
+            },
+            {
+                "url": "assets/images/time-icon.png",
+                "type": "image",
+                "key": "time-icon"
+            },
+            {
+                "url": "assets/images/timer-base.png",
+                "type": "image",
+                "key": "timer-base"
             },
             {
                 "url": "src/scripts/TweenManager.js",

@@ -38,7 +38,7 @@
                                 "key": "backSide"
                             },
                             "x": 210,
-                            "y": 630,
+                            "y": 607,
                             "scaleX": 1.2,
                             "scaleY": 1.2
                         },
@@ -50,7 +50,7 @@
                                 "key": "backSide"
                             },
                             "x": 540,
-                            "y": 630,
+                            "y": 607,
                             "scaleX": 1.2,
                             "scaleY": 1.2
                         },
@@ -62,7 +62,7 @@
                                 "key": "backSide"
                             },
                             "x": 870,
-                            "y": 630,
+                            "y": 607,
                             "scaleX": 1.2,
                             "scaleY": 1.2
                         },
@@ -74,7 +74,7 @@
                                 "key": "backSide"
                             },
                             "x": 210,
-                            "y": 960,
+                            "y": 937,
                             "scaleX": 1.2,
                             "scaleY": 1.2
                         },
@@ -86,7 +86,7 @@
                                 "key": "backSide"
                             },
                             "x": 540,
-                            "y": 960,
+                            "y": 937,
                             "scaleX": 1.2,
                             "scaleY": 1.2
                         },
@@ -98,7 +98,7 @@
                                 "key": "backSide"
                             },
                             "x": 870,
-                            "y": 960,
+                            "y": 937,
                             "scaleX": 1.2,
                             "scaleY": 1.2
                         },
@@ -110,7 +110,7 @@
                                 "key": "backSide"
                             },
                             "x": 210,
-                            "y": 1290,
+                            "y": 1267,
                             "scaleX": 1.2,
                             "scaleY": 1.2
                         },
@@ -122,7 +122,7 @@
                                 "key": "backSide"
                             },
                             "x": 540,
-                            "y": 1290,
+                            "y": 1267,
                             "scaleX": 1.2,
                             "scaleY": 1.2
                         },
@@ -134,7 +134,7 @@
                                 "key": "backSide"
                             },
                             "x": 870,
-                            "y": 1290,
+                            "y": 1267,
                             "scaleX": 1.2,
                             "scaleY": 1.2
                         }
@@ -144,6 +144,12 @@
                     "type": "Container",
                     "id": "375174d9-871b-4c00-93c0-87b38654c839",
                     "label": "container_frontSideCards",
+                    "scope": "CLASS"
+                },
+                {
+                    "type": "Container",
+                    "id": "15942978-fc70-4abb-9161-ef1497d5818b",
+                    "label": "container_cardBase",
                     "scope": "CLASS"
                 },
                 {
@@ -179,12 +185,12 @@
                         },
                         {
                             "type": "Image",
-                            "id": "a4c51306-bf44-4ffe-a4db-b2d80ad963fe",
-                            "label": "card_1",
+                            "id": "8f0cf886-1af2-4ce5-8581-04ee40cb827a",
+                            "label": "card",
                             "texture": {
                                 "key": "card-2"
                             },
-                            "x": 870,
+                            "x": 540,
                             "y": 1759,
                             "scaleX": 1.2,
                             "scaleY": 1.2,
@@ -192,12 +198,12 @@
                         },
                         {
                             "type": "Image",
-                            "id": "8f0cf886-1af2-4ce5-8581-04ee40cb827a",
-                            "label": "card",
+                            "id": "a4c51306-bf44-4ffe-a4db-b2d80ad963fe",
+                            "label": "card_1",
                             "texture": {
                                 "key": "card-2"
                             },
-                            "x": 540,
+                            "x": 870,
                             "y": 1759,
                             "scaleX": 1.2,
                             "scaleY": 1.2,
@@ -239,6 +245,53 @@
                     },
                     "x": 540,
                     "y": 1632
+                },
+                {
+                    "type": "Container",
+                    "id": "9b80c899-0c30-40a1-890c-786561961366",
+                    "label": "container_selectionCardTimer",
+                    "scope": "CLASS",
+                    "list": [
+                        {
+                            "type": "Text",
+                            "id": "5bb71803-b4d8-426a-885c-e3c935a23eec",
+                            "label": "time_1",
+                            "x": 114,
+                            "y": 1618,
+                            "originY": 0.5,
+                            "visible": false,
+                            "text": "Time Left : 03 ",
+                            "fontFamily": "Dewars",
+                            "fontSize": "32px",
+                            "color": "#FFC6B3"
+                        },
+                        {
+                            "type": "Text",
+                            "id": "d22b4328-7984-44aa-baac-9fa665028cf0",
+                            "label": "time",
+                            "x": 444,
+                            "y": 1618,
+                            "originY": 0.5,
+                            "visible": false,
+                            "text": "Time Left : 03 ",
+                            "fontFamily": "Dewars",
+                            "fontSize": "32px",
+                            "color": "#FFC6B3"
+                        },
+                        {
+                            "type": "Text",
+                            "id": "c8bdf236-cd9b-4e91-841c-8065fc51e42f",
+                            "label": "time_2",
+                            "x": 774,
+                            "y": 1618,
+                            "originY": 0.5,
+                            "visible": false,
+                            "text": "Time Left : 03 ",
+                            "fontFamily": "Dewars",
+                            "fontSize": "32px",
+                            "color": "#FFC6B3"
+                        }
+                    ]
                 },
                 {
                     "type": "Text",
@@ -287,6 +340,48 @@
                     "scaleX": 1.2,
                     "scaleY": 1.2,
                     "visible": false
+                },
+                {
+                    "type": "Container",
+                    "id": "aec12527-7e6c-415e-bc86-9416133d142e",
+                    "label": "container_timer",
+                    "scope": "CLASS",
+                    "visible": false,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "7da1fa76-2416-401c-82af-b259b8a93615",
+                            "label": "timer_base",
+                            "texture": {
+                                "key": "timer-base"
+                            },
+                            "x": 540,
+                            "y": 394
+                        },
+                        {
+                            "type": "Image",
+                            "id": "06040b9e-90ba-4d60-8f77-40e4493e8c73",
+                            "label": "time_icon",
+                            "texture": {
+                                "key": "time-icon"
+                            },
+                            "x": 496,
+                            "y": 394
+                        },
+                        {
+                            "type": "Text",
+                            "id": "9b89120d-da14-463b-940a-43c20c0b1392",
+                            "label": "time_txt",
+                            "scope": "CLASS",
+                            "x": 552,
+                            "y": 394,
+                            "originY": 0.5,
+                            "text": "05",
+                            "fontFamily": "GainsboroughSans",
+                            "fontSize": "60px",
+                            "color": "#ffc6b3"
+                        }
+                    ]
                 }
             ]
         }

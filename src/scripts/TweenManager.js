@@ -18,6 +18,7 @@ class TweenManager {
                         break;
                     case "play_button":
                         target.destroy();
+                        this.oScene.container_timer.setVisible(true);
                         this.cardAnimation();
                         this.instructionAnimation();
                         break;
@@ -48,6 +49,9 @@ class TweenManager {
                             }
                             this.resultAnimation();
                         }
+                        else {
+                            this.oScene.setCorrectCard();
+                        }
                     }
                 });
             }
@@ -60,6 +64,8 @@ class TweenManager {
             duration: 5400,
             delay: 200,
             onComplete: () => {
+                clearInterval(this.memorizeInterval);
+                this.oScene.container_timer.setVisible(false);
                 this.oScene.instruction_txt.setText("FIND THE IMAGE");
                 this.oScene.setCorrectCard();
                 this.oScene.setTimer();
@@ -70,6 +76,11 @@ class TweenManager {
         })
     }
     cardAnimation() {
+        let time = 5;
+        this.memorizeInterval = setInterval(() => {
+            this.oScene.time_txt.setText(`0${time}`);
+            time--;
+        }, 900);
         this.oTweenConfig = {
             targets: [
                 this.oScene.container_backSideCards.list,
@@ -96,24 +107,8 @@ class TweenManager {
         };
         playcardAnimation(0);
     }
-    newCardAnimation(nSelectedCount, borderTexture) {
-        // this.container_correctCards.list[this.nSelectedCount].x = this.container_selectedCards.list[this.nSelectedCount].x;
-
-        this.oScene.tweens.add({
-            targets: this.oScene.container_correctCards.list[nSelectedCount],
-            x: this.oScene.container_selectedCards.list[nSelectedCount].x,
-            ease: 'power2',
-            duration: 200,
-            onComplete: () => {
-                let border = this.oScene.add.image(this.oScene.container_selectedCards.list[nSelectedCount].x, this.oScene.container_selectedCards.list[nSelectedCount].y, borderTexture).setScale(1.2);
-                this.oScene.container_border.add(border);
-                this.oScene.setCorrectCard();
-            }
-        });
-    }
     resultAnimation() {
         this.oScene.instruction_txt.destroy();
-        this.oScene.container_border.destroy();
         const resultImageAnimation = () => {
             this.oScene.tweens.add({
                 targets: this.oScene.result_image,
@@ -139,7 +134,7 @@ class TweenManager {
                 }
             });
         }
-        let aTarget = [this.oScene.container_backSideCards, this.oScene.container_frontSideCards, this.oScene.container_correctCards];
+        let aTarget = [this.oScene.container_backSideCards, this.oScene.container_frontSideCards, [this.oScene.container_border, this.oScene.container_selectionCardTimer, this.oScene.container_correctCards]];
         for (let i = 0; i < aTarget.length; i++) {
             this.oScene.tweens.add({
                 targets: aTarget[i],
