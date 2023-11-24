@@ -93,6 +93,31 @@ class Level extends Phaser.Scene {
 		const container_border = this.add.container(0, 0);
 		body.add(container_border);
 
+		// container_selectedCards
+		const container_selectedCards = this.add.container(0, 0);
+		body.add(container_selectedCards);
+
+		// card_2
+		const card_2 = this.add.image(210, 1759, "card-2");
+		card_2.scaleX = 1.2;
+		card_2.scaleY = 1.2;
+		card_2.visible = false;
+		container_selectedCards.add(card_2);
+
+		// card_1
+		const card_1 = this.add.image(870, 1759, "card-2");
+		card_1.scaleX = 1.2;
+		card_1.scaleY = 1.2;
+		card_1.visible = false;
+		container_selectedCards.add(card_1);
+
+		// card
+		const card = this.add.image(540, 1759, "card-2");
+		card.scaleX = 1.2;
+		card.scaleY = 1.2;
+		card.visible = false;
+		container_selectedCards.add(card);
+
 		// result_image
 		const result_image = this.add.image(1668, 960, "you_win");
 		body.add(result_image);
@@ -136,6 +161,7 @@ class Level extends Phaser.Scene {
 		this.container_frontSideCards = container_frontSideCards;
 		this.container_correctCards = container_correctCards;
 		this.container_border = container_border;
+		this.container_selectedCards = container_selectedCards;
 		this.result_image = result_image;
 		this.registration_button = registration_button;
 		this.play_button = play_button;
@@ -153,6 +179,8 @@ class Level extends Phaser.Scene {
 	container_correctCards;
 	/** @type {Phaser.GameObjects.Container} */
 	container_border;
+	/** @type {Phaser.GameObjects.Container} */
+	container_selectedCards;
 	/** @type {Phaser.GameObjects.Image} */
 	result_image;
 	/** @type {Phaser.GameObjects.Image} */
@@ -175,6 +203,7 @@ class Level extends Phaser.Scene {
 		this.oInputManager = new InputManager(this);
 		this.nCount = 0;
 		this.nCorrectSelection = 0;
+		this.nSelectedCount = 0;
 		this.aCorrectCard = ['card-2', 'card-5', 'card-6'];
 		this.container_backSideCards.list.forEach((card, index) => {
 			card.setScale(1.2, 1.2);
@@ -184,15 +213,14 @@ class Level extends Phaser.Scene {
 					this.setTimer();
 					card.disableInteractive();
 					this.nCount++;
-					if (this.container_frontSideCards.list[index].texture.key == this.container_correctCards.list[0].texture.key) {
+					if (this.container_frontSideCards.list[index].texture.key == this.aSelectedCard[0]) {
 						this.nCorrectSelection++;
-						setTimeout(() => {
-							let border = this.add.image(this.container_frontSideCards.list[index].x, this.container_frontSideCards.list[index].y, "border").setScale(1.2);
-							this.container_border.add(border);
-						}, 400);
-						this.container_correctCards.list[0].destroy();
-						this.setCorrectCard();
+						this.oTweenManager.newCardAnimation(this.nSelectedCount, 'green-border');
 					}
+					else {
+						this.oTweenManager.newCardAnimation(this.nSelectedCount, 'red-border');
+					}
+					this.nSelectedCount++;
 					this.container_backSideCards.list.forEach(card => {
 						card.disableInteractive();
 					});
@@ -218,6 +246,7 @@ class Level extends Phaser.Scene {
 		const nRandomNumber = Phaser.Math.Between(0, this.aCorrectCard.length - 1);
 		const card = this.add.image(this.container_backSideCards.list[7].x, this.container_backSideCards.list[7].y + 462, this.aCorrectCard[nRandomNumber]).setScale(1.2);
 		this.container_correctCards.add(card);
+		this.aSelectedCard = [this.aCorrectCard[nRandomNumber]];
 		this.aCorrectCard.splice(nRandomNumber, 1);
 	}
 	setTimer() {
@@ -226,6 +255,8 @@ class Level extends Phaser.Scene {
 			time--;
 			if (time < 0) {
 				this.nCount++;
+				this.oTweenManager.newCardAnimation(this.nSelectedCount, 'red-border');
+				this.nSelectedCount++;
 				clearInterval(this.timerInterval);
 				if (this.nCount === 3) {
 					if (this.nCorrectSelection < 2) {

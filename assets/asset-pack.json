@@ -2,11 +2,6 @@
     "section1": {
         "files": [
             {
-                "url": "assets/images/border.png",
-                "type": "image",
-                "key": "border"
-            },
-            {
                 "url": "assets/images/card-1.png",
                 "type": "image",
                 "key": "card-1"
@@ -57,6 +52,11 @@
                 "key": "GameManager"
             },
             {
+                "url": "assets/images/green-border.png",
+                "type": "image",
+                "key": "green-border"
+            },
+            {
                 "url": "src/scenes/Home.js",
                 "type": "sceneFile",
                 "key": "Home"
@@ -70,6 +70,11 @@
                 "url": "assets/images/play-button.png",
                 "type": "image",
                 "key": "play-button"
+            },
+            {
+                "url": "assets/images/red-border.png",
+                "type": "image",
+                "key": "red-border"
             },
             {
                 "url": "assets/images/registration-button.png",

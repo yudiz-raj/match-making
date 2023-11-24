@@ -96,6 +96,21 @@ class TweenManager {
         };
         playcardAnimation(0);
     }
+    newCardAnimation(nSelectedCount, borderTexture) {
+        // this.container_correctCards.list[this.nSelectedCount].x = this.container_selectedCards.list[this.nSelectedCount].x;
+
+        this.oScene.tweens.add({
+            targets: this.oScene.container_correctCards.list[nSelectedCount],
+            x: this.oScene.container_selectedCards.list[nSelectedCount].x,
+            ease: 'power2',
+            duration: 200,
+            onComplete: () => {
+                let border = this.oScene.add.image(this.oScene.container_selectedCards.list[nSelectedCount].x, this.oScene.container_selectedCards.list[nSelectedCount].y, borderTexture).setScale(1.2);
+                this.oScene.container_border.add(border);
+                this.oScene.setCorrectCard();
+            }
+        });
+    }
     resultAnimation() {
         this.oScene.instruction_txt.destroy();
         this.oScene.container_border.destroy();

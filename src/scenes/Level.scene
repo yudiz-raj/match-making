@@ -159,6 +159,53 @@
                     "scope": "CLASS"
                 },
                 {
+                    "type": "Container",
+                    "id": "17f4b20b-c156-4e63-8605-d3f1c1502981",
+                    "label": "container_selectedCards",
+                    "scope": "CLASS",
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "0ce93f90-036a-432e-b249-3c07d0b893c3",
+                            "label": "card_2",
+                            "texture": {
+                                "key": "card-2"
+                            },
+                            "x": 210,
+                            "y": 1759,
+                            "scaleX": 1.2,
+                            "scaleY": 1.2,
+                            "visible": false
+                        },
+                        {
+                            "type": "Image",
+                            "id": "a4c51306-bf44-4ffe-a4db-b2d80ad963fe",
+                            "label": "card_1",
+                            "texture": {
+                                "key": "card-2"
+                            },
+                            "x": 870,
+                            "y": 1759,
+                            "scaleX": 1.2,
+                            "scaleY": 1.2,
+                            "visible": false
+                        },
+                        {
+                            "type": "Image",
+                            "id": "8f0cf886-1af2-4ce5-8581-04ee40cb827a",
+                            "label": "card",
+                            "texture": {
+                                "key": "card-2"
+                            },
+                            "x": 540,
+                            "y": 1759,
+                            "scaleX": 1.2,
+                            "scaleY": 1.2,
+                            "visible": false
+                        }
+                    ]
+                },
+                {
                     "type": "Image",
                     "id": "3b707115-d8a8-430c-bb50-d7263c3029a5",
                     "label": "result_image",
