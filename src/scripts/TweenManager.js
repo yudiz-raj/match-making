@@ -6,7 +6,7 @@ class TweenManager {
         target.disableInteractive();
         this.oScene.tweens.add({
             targets: target,
-            scale: "-=0.08",
+            scale: 0.92,
             ease: "power2",
             duration: 200,
             yoyo: true,
@@ -14,7 +14,8 @@ class TweenManager {
                 switch (target.name) {
                     case "registration_button":
                         // this.oScene.scene.restart("Level");
-                        target.setInteractive();
+                        let nResult = this.oScene.nCorrectSelection;
+                        window.location.replace(`https://www.theofferclub.com/dewarslogo?score=0${nResult}`);
                         break;
                     case "play_button":
                         target.destroy();
@@ -34,9 +35,10 @@ class TweenManager {
             scaleX: 0,
             duration: 200,
             onComplete: () => {
+                this.oScene.oSoundManager.playSound(this.oScene.oSoundManager.flipSound, false);
                 this.oScene.tweens.add({
                     targets: this.oScene.container_frontSideCards.list[index],
-                    scaleX: 1.2,
+                    scaleX: 1,
                     duration: 200,
                     onComplete: () => {
                         this.oScene.container_backSideCards.list.forEach(card => {
@@ -79,7 +81,12 @@ class TweenManager {
         let time = 5;
         this.memorizeInterval = setInterval(() => {
             this.oScene.time_txt.setText(`0${time}`);
-            time--;
+            if (time > 0) {
+                time--;
+            }
+            if (time < 4) {
+                this.oScene.oSoundManager.playSound(this.oScene.oSoundManager.timerSound, false);
+            }
         }, 900);
         this.oTweenConfig = {
             targets: [
@@ -88,8 +95,8 @@ class TweenManager {
                 this.oScene.container_frontSideCards.list,
                 this.oScene.container_backSideCards.list,
             ],
-            scaleX: [0, 1.2, 0, 1.2],
-            scaleY: [1.2, 1.2, 1.2, 1.2],
+            scaleX: [0, 1, 0, 1.2],
+            scaleY: [1.2, 1, 1, 1.2],
             delay: [100, 0, 5000, 0]
         };
         const { oScene, oTweenConfig } = this;
@@ -110,6 +117,9 @@ class TweenManager {
     resultAnimation() {
         this.oScene.instruction_txt.destroy();
         const resultImageAnimation = () => {
+            this.oScene.result_image.texture.key == "you_lose" ?
+                this.oScene.oSoundManager.playSound(this.oScene.oSoundManager.loseSound, false) :
+                this.oScene.oSoundManager.playSound(this.oScene.oSoundManager.winSound, false);
             this.oScene.tweens.add({
                 targets: this.oScene.result_image,
                 x: 540,
@@ -121,10 +131,10 @@ class TweenManager {
                         x: -1200,
                         ease: 'power2',
                         duration: 600,
-                        delay: 5000,
+                        delay: 3000,
                         onComplete: () => {
                             this.oScene.tweens.add({
-                                targets: this.oScene.registration_button,
+                                targets: [this.oScene.registration_button, this.oScene.registrationButton_base],
                                 x: 540,
                                 ease: 'power2',
                                 duration: 600,

@@ -148,12 +148,6 @@
                 },
                 {
                     "type": "Container",
-                    "id": "15942978-fc70-4abb-9161-ef1497d5818b",
-                    "label": "container_cardBase",
-                    "scope": "CLASS"
-                },
-                {
-                    "type": "Container",
                     "id": "abfdc88b-659c-46ca-a67c-616bf803cf68",
                     "label": "container_correctCards",
                     "scope": "CLASS"
@@ -179,8 +173,8 @@
                             },
                             "x": 210,
                             "y": 1759,
-                            "scaleX": 1.2,
-                            "scaleY": 1.2,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9,
                             "visible": false
                         },
                         {
@@ -192,8 +186,8 @@
                             },
                             "x": 540,
                             "y": 1759,
-                            "scaleX": 1.2,
-                            "scaleY": 1.2,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9,
                             "visible": false
                         },
                         {
@@ -205,8 +199,8 @@
                             },
                             "x": 870,
                             "y": 1759,
-                            "scaleX": 1.2,
-                            "scaleY": 1.2,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9,
                             "visible": false
                         }
                     ]
@@ -224,10 +218,22 @@
                 },
                 {
                     "type": "Image",
+                    "id": "8d890db5-84f6-4a50-b5e9-9242ae44a944",
+                    "label": "registrationButton_base",
+                    "scope": "CLASS",
+                    "texture": {
+                        "key": "registrationButton-base"
+                    },
+                    "x": 1667,
+                    "y": 960
+                },
+                {
+                    "type": "Image",
                     "id": "604e41e3-584c-49eb-825a-f824eb230f4d",
                     "label": "registration_button",
                     "useGameObjectName": true,
                     "scope": "CLASS",
+                    "hitArea.shape": "PIXEL_PERFECT",
                     "texture": {
                         "key": "registration-button"
                     },
@@ -240,11 +246,12 @@
                     "label": "play_button",
                     "useGameObjectName": true,
                     "scope": "CLASS",
+                    "hitArea.shape": "PIXEL_PERFECT",
                     "texture": {
                         "key": "play-button"
                     },
                     "x": 540,
-                    "y": 1632
+                    "y": 1600
                 },
                 {
                     "type": "Container",
@@ -257,39 +264,39 @@
                             "id": "5bb71803-b4d8-426a-885c-e3c935a23eec",
                             "label": "time_1",
                             "x": 114,
-                            "y": 1618,
+                            "y": 1596,
                             "originY": 0.5,
                             "visible": false,
-                            "text": "Time Left : 03 ",
+                            "text": "Time Left : 05 ",
+                            "align": "center",
                             "fontFamily": "Dewars",
-                            "fontSize": "32px",
-                            "color": "#FFC6B3"
+                            "fontSize": "32px"
                         },
                         {
                             "type": "Text",
                             "id": "d22b4328-7984-44aa-baac-9fa665028cf0",
                             "label": "time",
                             "x": 444,
-                            "y": 1618,
+                            "y": 1596,
                             "originY": 0.5,
                             "visible": false,
-                            "text": "Time Left : 03 ",
+                            "text": "Time Left : 05 ",
+                            "align": "center",
                             "fontFamily": "Dewars",
-                            "fontSize": "32px",
-                            "color": "#FFC6B3"
+                            "fontSize": "32px"
                         },
                         {
                             "type": "Text",
                             "id": "c8bdf236-cd9b-4e91-841c-8065fc51e42f",
                             "label": "time_2",
                             "x": 774,
-                            "y": 1618,
+                            "y": 1596,
                             "originY": 0.5,
                             "visible": false,
-                            "text": "Time Left : 03 ",
+                            "text": "Time Left : 05 ",
+                            "align": "center",
                             "fontFamily": "Dewars",
-                            "fontSize": "32px",
-                            "color": "#FFC6B3"
+                            "fontSize": "32px"
                         }
                     ]
                 },
@@ -309,7 +316,7 @@
                     "alphaBottomRight": 0,
                     "text": "MEMORIZE THE SPOTS ",
                     "fontFamily": "GainsboroughSans",
-                    "fontSize": "94px",
+                    "fontSize": "76px",
                     "shadow.offsetX": 6,
                     "shadow.offsetY": 5,
                     "shadow.fill": true,

@@ -8,12 +8,8 @@ class Card extends Phaser.GameObjects.Container {
 	constructor(scene, x, y) {
 		super(scene, x ?? -6, y ?? 0);
 
-		// card_base
-		const card_base = scene.add.image(6, 0, "card-base");
-		this.add(card_base);
-
 		// card
-		const card = scene.add.image(0, 0, "card-5");
+		const card = scene.add.image(0, 0, "card-1");
 		this.add(card);
 
 		this.card = card;

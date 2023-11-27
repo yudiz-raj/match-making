@@ -18,19 +18,10 @@
                 {
                     "type": "Image",
                     "id": "a3f3a9f9-0e0d-4d56-8ade-e9dc6baf0170",
-                    "label": "card_base",
-                    "texture": {
-                        "key": "card-base"
-                    },
-                    "x": 6
-                },
-                {
-                    "type": "Image",
-                    "id": "8fa14a1f-721e-4605-adae-0f3389c76a27",
                     "label": "card",
                     "scope": "CLASS",
                     "texture": {
-                        "key": "card-5"
+                        "key": "card-1"
                     }
                 }
             ]

@@ -2,6 +2,13 @@
     "section1": {
         "files": [
             {
+                "url": [
+                    "assets/sounds/button-sound.mp3"
+                ],
+                "type": "audio",
+                "key": "button-sound"
+            },
+            {
                 "url": "src/prefabs/Card.js",
                 "type": "script",
                 "key": "Card"
@@ -162,64 +169,9 @@
                 "key": "card-37"
             },
             {
-                "url": "assets/images/card-38.png",
-                "type": "image",
-                "key": "card-38"
-            },
-            {
-                "url": "assets/images/card-39.png",
-                "type": "image",
-                "key": "card-39"
-            },
-            {
                 "url": "assets/images/card-4.png",
                 "type": "image",
                 "key": "card-4"
-            },
-            {
-                "url": "assets/images/card-40.png",
-                "type": "image",
-                "key": "card-40"
-            },
-            {
-                "url": "assets/images/card-41.png",
-                "type": "image",
-                "key": "card-41"
-            },
-            {
-                "url": "assets/images/card-42.png",
-                "type": "image",
-                "key": "card-42"
-            },
-            {
-                "url": "assets/images/card-43.png",
-                "type": "image",
-                "key": "card-43"
-            },
-            {
-                "url": "assets/images/card-44.png",
-                "type": "image",
-                "key": "card-44"
-            },
-            {
-                "url": "assets/images/card-45.png",
-                "type": "image",
-                "key": "card-45"
-            },
-            {
-                "url": "assets/images/card-46.png",
-                "type": "image",
-                "key": "card-46"
-            },
-            {
-                "url": "assets/images/card-47.png",
-                "type": "image",
-                "key": "card-47"
-            },
-            {
-                "url": "assets/images/card-48.png",
-                "type": "image",
-                "key": "card-48"
             },
             {
                 "url": "assets/images/card-5.png",
@@ -247,14 +199,23 @@
                 "key": "card-9"
             },
             {
-                "url": "assets/images/card-base.png",
-                "type": "image",
-                "key": "card-base"
-            },
-            {
                 "url": "assets/images/card-timer-base.png",
                 "type": "image",
                 "key": "card-timer-base"
+            },
+            {
+                "url": [
+                    "assets/sounds/correct-sound.mp3"
+                ],
+                "type": "audio",
+                "key": "correct-sound"
+            },
+            {
+                "url": [
+                    "assets/sounds/flip-sound.mp3"
+                ],
+                "type": "audio",
+                "key": "flip-sound"
             },
             {
                 "url": "src/scripts/GameManager.js",
@@ -272,9 +233,23 @@
                 "key": "Home"
             },
             {
+                "url": [
+                    "assets/sounds/incorrect-sound.mp3"
+                ],
+                "type": "audio",
+                "key": "incorrect-sound"
+            },
+            {
                 "url": "src/scripts/InputManager.js",
                 "type": "script",
                 "key": "InputManager"
+            },
+            {
+                "url": [
+                    "assets/sounds/lose-sound.mp3"
+                ],
+                "type": "audio",
+                "key": "lose-sound"
             },
             {
                 "url": "assets/images/play-button.png",
@@ -290,6 +265,11 @@
                 "url": "assets/images/registration-button.png",
                 "type": "image",
                 "key": "registration-button"
+            },
+            {
+                "url": "assets/images/registrationButton-base.png",
+                "type": "image",
+                "key": "registrationButton-base"
             },
             {
                 "url": "src/prefabs/SelectionCardTimer.js",
@@ -317,9 +297,23 @@
                 "key": "timer-base"
             },
             {
+                "url": [
+                    "assets/sounds/timer-sound.mp3"
+                ],
+                "type": "audio",
+                "key": "timer-sound"
+            },
+            {
                 "url": "src/scripts/TweenManager.js",
                 "type": "script",
                 "key": "TweenManager"
+            },
+            {
+                "url": [
+                    "assets/sounds/win-sound.mp3"
+                ],
+                "type": "audio",
+                "key": "win-sound"
             },
             {
                 "url": "assets/images/you_lose.png",
