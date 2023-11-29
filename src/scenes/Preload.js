@@ -22,14 +22,6 @@ class Preload extends Phaser.Scene {
 	/** @returns {void} */
 	editorCreate() {
 
-		// background
-		this.add.image(540, 960, "background");
-
-		// backSide
-		const backSide = this.add.image(540, 960, "backSide");
-		backSide.scaleX = 2;
-		backSide.scaleY = 2;
-
 		this.events.emit("scene-awake");
 	}
 

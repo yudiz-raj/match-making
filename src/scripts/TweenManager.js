@@ -130,15 +130,17 @@ class TweenManager {
                         targets: this.oScene.result_image,
                         x: -1200,
                         ease: 'power2',
-                        duration: 600,
-                        delay: 3000,
+                        duration: 400,
+                        delay: 2000,
                         onComplete: () => {
-                            this.oScene.tweens.add({
-                                targets: [this.oScene.registration_button, this.oScene.registrationButton_base],
-                                x: 540,
-                                ease: 'power2',
-                                duration: 600,
-                            });
+                            let nResult = this.oScene.nCorrectSelection;
+                            window.location.replace(`https://www.theofferclub.com/dewarslogo?score=${nResult}`);
+                            // this.oScene.tweens.add({
+                            //     targets: [this.oScene.registration_button, this.oScene.registrationButton_base],
+                            //     x: 540,
+                            //     ease: 'power2',
+                            //     duration: 600,
+                            // });
                         }
                     });
                 }

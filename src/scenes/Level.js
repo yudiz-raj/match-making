@@ -261,9 +261,6 @@ class Level extends Phaser.Scene {
 	/* START-USER-CODE */
 
 	// Write more your code here
-	isIOS() {
-		return /iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-	}
 
 	create() {
 
@@ -271,15 +268,6 @@ class Level extends Phaser.Scene {
 		this.oTweenManager = new TweenManager(this);
 		this.oInputManager = new InputManager(this);
 		this.oSoundManager = new SoundManager(this);
-		console.log(this.game.canvas);
-		if (isIOS()) {
-			var newWidth = 500;
-			var newHeight = 400;
-			var offsetX = (window.innerWidth - newWidth) / 2;
-			var offsetY = (window.innerHeight - newHeight) / 2;
-			this.game.scale.resize(newWidth, newHeight);
-			this.game.scale.setOffset(offsetX, offsetY);
-		}
 		this.nCount = 0;
 		this.nCorrectSelection = 0;
 		this.nSelectedCount = 0;

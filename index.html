@@ -2,7 +2,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 	<title>Match Making</title>
@@ -35,12 +35,43 @@
 			background: #2f2f2f;
 			margin: 0;
 			padding: 0;
+			position: relative;
+			height: calc(100vh - constant(safe-area-inset-top));
+			height: calc(100vh - constant(safe-area-inset-top));
+			/* For modern browsers */
+			height: calc(100vh - env(safe-area-inset-top));
+			/* For Safari on iOS */
+			overflow: hidden;
+			/* Prevent scrollbars if content exceeds viewport */
+			margin: 0;
+			/* Remove any default margin */
+			padding: 0;
+			/* Remove any default padding */
+		}
+
+		canvas {
+
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			margin: 0 !important;
+
+		}
+
+		#game-division {
+			max-height: calc(var(--vh, 1vh) * 100);
+		}
+
+		:root {
+			--vh: 1vh;
 		}
 	</style>
 
 </head>
 
 <body>
+	<div id="game-division"></div>
 </body>
 
 </html>
