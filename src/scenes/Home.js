@@ -23,9 +23,6 @@ class Home extends Phaser.Scene {
 		const play_button = this.add.image(540, 1530, "play-button");
 		play_button.name = "play_button";
 
-		// yudiz_logo
-		this.add.image(540, 675, "yudiz-logo");
-
 		this.play_button = play_button;
 
 		this.events.emit("scene-awake");

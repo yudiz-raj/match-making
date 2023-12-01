@@ -19,6 +19,8 @@ class TweenManager {
                         break;
                     case "play_button":
                         target.destroy();
+                        this.oScene.how_to_play_txt.destroy();
+                        this.oScene.rectangle_1.destroy();
                         this.oScene.container_timer.setVisible(true);
                         this.cardAnimation();
                         this.instructionAnimation();

@@ -133,7 +133,7 @@ class Level extends Phaser.Scene {
 		body.add(registration_button);
 
 		// play_button
-		const play_button = this.add.image(540, 1600, "play-button");
+		const play_button = this.add.image(540, 1660, "play-button");
 		play_button.name = "play_button";
 		play_button.setInteractive(this.input.makePixelPerfect());
 		body.add(play_button);
@@ -175,7 +175,7 @@ class Level extends Phaser.Scene {
 		instruction_txt.alphaBottomLeft = 0;
 		instruction_txt.alphaBottomRight = 0;
 		instruction_txt.text = "MEMORIZE THE SPOTS ";
-		instruction_txt.setStyle({ "fontFamily": "GainsboroughSans", "fontSize": "76px", "shadow.offsetX": 6, "shadow.offsetY": 5, "shadow.blur": 10, "shadow.fill": true });
+		instruction_txt.setStyle({ "color": "#000", "fontFamily": "GainsboroughSans", "fontSize": "76px", "fontStyle": "bold", "stroke": "#000000" });
 		body.add(instruction_txt);
 
 		// top_logo
@@ -211,6 +211,21 @@ class Level extends Phaser.Scene {
 		time_txt.setStyle({ "color": "#ffc6b3", "fontFamily": "GainsboroughSans", "fontSize": "60px" });
 		container_timer.add(time_txt);
 
+		// rectangle_1
+		const rectangle_1 = this.add.rectangle(540, 1523, 1080, 80);
+		rectangle_1.alpha = 0.5;
+		rectangle_1.isFilled = true;
+		rectangle_1.fillColor = 7354657;
+		body.add(rectangle_1);
+
+		// how_to_play_txt
+		const how_to_play_txt = this.add.text(540, 1523, "", {});
+		how_to_play_txt.setOrigin(0.5, 0.5);
+		how_to_play_txt.text = "How to Play: Memorize the Spots and Answer to Win ";
+		how_to_play_txt.setStyle({ "align": "center", "color": "#ffff", "fontFamily": "DewarsBaskerville", "fontSize": "46px", "stroke": "#ffffffff", "shadow.offsetX":6,"shadow.offsetY":5,"shadow.blur":10});
+		how_to_play_txt.setLineSpacing(20);
+		body.add(how_to_play_txt);
+
 		this.container_backSideCards = container_backSideCards;
 		this.container_frontSideCards = container_frontSideCards;
 		this.container_correctCards = container_correctCards;
@@ -225,6 +240,8 @@ class Level extends Phaser.Scene {
 		this.bottom_logo = bottom_logo;
 		this.time_txt = time_txt;
 		this.container_timer = container_timer;
+		this.rectangle_1 = rectangle_1;
+		this.how_to_play_txt = how_to_play_txt;
 
 		this.events.emit("scene-awake");
 	}
@@ -257,6 +274,10 @@ class Level extends Phaser.Scene {
 	time_txt;
 	/** @type {Phaser.GameObjects.Container} */
 	container_timer;
+	/** @type {Phaser.GameObjects.Rectangle} */
+	rectangle_1;
+	/** @type {Phaser.GameObjects.Text} */
+	how_to_play_txt;
 
 	/* START-USER-CODE */
 

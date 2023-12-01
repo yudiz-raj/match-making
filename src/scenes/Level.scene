@@ -251,7 +251,7 @@
                         "key": "play-button"
                     },
                     "x": 540,
-                    "y": 1600
+                    "y": 1660
                 },
                 {
                     "type": "Container",
@@ -317,10 +317,9 @@
                     "text": "MEMORIZE THE SPOTS ",
                     "fontFamily": "GainsboroughSans",
                     "fontSize": "76px",
-                    "shadow.offsetX": 6,
-                    "shadow.offsetY": 5,
-                    "shadow.fill": true,
-                    "shadow.blur": 10
+                    "fontStyle": "bold",
+                    "color": "#000",
+                    "stroke": "#000000"
                 },
                 {
                     "type": "Image",
@@ -389,6 +388,39 @@
                             "color": "#ffc6b3"
                         }
                     ]
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "8ea29a72-8fd0-473b-a6d5-9e9a56b8e416",
+                    "label": "rectangle_1",
+                    "scope": "CLASS",
+                    "x": 540,
+                    "y": 1523,
+                    "alpha": 0.5,
+                    "isFilled": true,
+                    "fillColor": "#703921",
+                    "width": 1080,
+                    "height": 80
+                },
+                {
+                    "type": "Text",
+                    "id": "487a256e-1776-4d80-a6d8-989d479ab0b3",
+                    "label": "how_to_play_txt",
+                    "scope": "CLASS",
+                    "x": 540,
+                    "y": 1523,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "How to Play: Memorize the Spots and Answer to Win ",
+                    "lineSpacing": 20,
+                    "align": "center",
+                    "fontFamily": "DewarsBaskerville",
+                    "fontSize": "46px",
+                    "color": "#ffff",
+                    "stroke": "#ffffffff",
+                    "shadow.offsetX": 6,
+                    "shadow.offsetY": 5,
+                    "shadow.blur": 10
                 }
             ]
         }
